@@ -1,0 +1,68 @@
+site_name: PS UiPath for Coding Agents Bootcamp
+site_url: https://shirley-hastier.github.io/ps-uipath-coding-agents-bootcamp/
+site_description: Hands-on bootcamp handbook for building UiPath agents and Maestro orchestrations with coding agents
+site_author: Shirley Hastier
+
+theme:
+  name: material
+  font:
+    text: Inter
+  palette:
+    scheme: default
+    primary: deep orange
+    accent: orange
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - toc.integrate
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.tabs.link
+
+hooks:
+  - hooks/split_cols.py
+
+# main.py supplies environment variables (training_url, training_tenant, env_label)
+# driven by the BOOTCAMP_ENV env var (staging | prod). See main.py.
+plugins:
+  - search
+  - macros:
+      module_name: main
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Overview: getting-started/index.md
+    - 1. Installing the CLI and Skills: getting-started/1-install-the-cli-and-skills.md
+    - 2. Practicing the CLI: getting-started/2-practice-the-cli.md
+    - 3. Build Your First Agent: getting-started/3-build-your-first-agent.md
+    - You did it!: getting-started/you-did-it.md
+  - Next Steps: next-steps.md
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js
+
+extra:
+  generator: false

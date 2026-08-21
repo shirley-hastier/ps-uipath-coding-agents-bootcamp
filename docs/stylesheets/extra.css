@@ -1,0 +1,24 @@
+.img-cols {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin: 1rem 0;
+}
+
+.img-cols > div {
+  min-width: 0;
+}
+
+.img-cols-30 > div:first-child { flex: 0 0 30%; }
+.img-cols-30 > div:last-child  { flex: 0 0 70%; }
+
+.img-cols-50 > div { flex: 0 0 50%; }
+
+.img-cols-70 > div:first-child { flex: 0 0 70%; }
+.img-cols-70 > div:last-child  { flex: 0 0 30%; }
+
+@media (max-width: 768px) {
+  .img-cols {
+    flex-direction: column;
+  }
+}
