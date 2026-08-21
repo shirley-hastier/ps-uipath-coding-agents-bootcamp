@@ -76,6 +76,6 @@ See [Day 2](../day-2/index.md) for the full module.
 ## After today
 
 Days 3–10 are self-paced office hours — see
-[Days 3–10: Office Hours & Checkpoints](../days-3-10-office-hours.md) for
+[Days 3–10: Office Hours & Checkpoints](../days-3-10/index.md) for
 the daily focus and what "done" looks like each day, through your Day 10
 demo.

@@ -55,7 +55,7 @@ the bootcamp.*
 ## What's next
 
 Days 3–10 are self-paced office hours with daily checkpoints. See
-[Days 3–10: Office Hours & Checkpoints](../days-3-10-office-hours.md) for
+[Days 3–10: Office Hours & Checkpoints](../days-3-10/index.md) for
 the daily focus and what "done" looks like each day, building toward your
 Day 10 demo.
 

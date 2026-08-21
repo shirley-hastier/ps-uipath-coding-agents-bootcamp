@@ -67,7 +67,16 @@ nav:
     - 5. Hands-On Lab — Build a Conversational Agent: day-2/5-hands-on-lab-conversational-agent.md
     - 6. Coded Agents & Production Readiness: day-2/6-coded-agents-and-production-readiness.md
     - 7. Reflection & Office Hours Handoff: day-2/7-reflection-and-office-hours-handoff.md
-  - Days 3-10 — Office Hours: days-3-10-office-hours.md
+  - Days 3-10 — Office Hours:
+    - Overview: days-3-10/index.md
+    - Day 3 — Prompting Coding Agents: days-3-10/day-3.md
+    - Day 4 — Skills and CLI Hygiene: days-3-10/day-4.md
+    - Day 5 — Low-Code Agent Authoring: days-3-10/day-5.md
+    - Day 6 — MCP Server Patterns: days-3-10/day-6.md
+    - Day 7 — External and Coded Agents: days-3-10/day-7.md
+    - Day 8 — Conversational Agents: days-3-10/day-8.md
+    - Day 9 — IXP / DU Document Intake: days-3-10/day-9.md
+    - Day 10 — Evals, Governance, Deployment: days-3-10/day-10.md
   - Resources: resources.md
 
 extra_css:

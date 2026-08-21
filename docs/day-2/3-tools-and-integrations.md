@@ -155,7 +155,7 @@ IXP (Intelligent Xtraction & Processing — Document Understanding,
 Communications Mining, and Generative Extraction) can also be exposed to
 an agent as a tool, the same way an Integration Service connector is. Full
 hands-on IXP work is covered in
-[Days 3–10, Day 9](../days-3-10-office-hours.md) — the short version for
+[Days 3–10, Day 9](../days-3-10/day-9.md) — the short version for
 today: IXP gives you visibility into taxonomy, per-field confidence, and
 validation state that you lose if you extract documents with a generic
 LLM prompt instead.

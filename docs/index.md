@@ -29,7 +29,7 @@ This guide serves two audiences at once:
 |---|---|---|
 | [Day 1](day-1/index.md) | Instructor-led: foundations, setup, skills, CLI, prompting, first build | Get everyone to a first working agent |
 | Day 2 *(coming soon)* | Instructor-led: agent design patterns, MCP, HITL, conversational agents, evals, governance | Extend and stabilize the build path |
-| [Days 3–10](days-3-10-office-hours.md) | Daily office hours + checkpoints | Remove blockers, refine your use case, track progress toward the Day 10 demo |
+| [Days 3–10](days-3-10/index.md) | Daily office hours + checkpoints | Remove blockers, refine your use case, track progress toward the Day 10 demo |
 
 Read the [Program Overview](program-overview.md) first if you want the full
 shape of the two weeks before diving into Day 1.
