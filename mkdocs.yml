@@ -58,7 +58,15 @@ nav:
     - 3. Prompting Coding Agents: day-1/3-prompting-coding-agents.md
     - 4. Hands-On Lab — Build a Low-Code Agent: day-1/4-hands-on-lab-sentiment-agent.md
     - 5. Reflection & Day 2 Preview: day-1/5-reflection-and-day-2-preview.md
-  - Day 2 — Enterprise Agent Patterns: day-2/index.md
+  - Day 2 — Enterprise Agent Patterns:
+    - Day 2: day-2/index.md
+    - 1. Common Agent Design Patterns: day-2/1-agent-design-patterns.md
+    - 2. Enterprise Data & Context Grounding: day-2/2-context-grounding.md
+    - 3. Tool-Using Agents & Integrations: day-2/3-tools-and-integrations.md
+    - 4. Human-in-the-Loop & Escalation Design: day-2/4-hitl-and-escalation.md
+    - 5. Hands-On Lab — Build a Conversational Agent: day-2/5-hands-on-lab-conversational-agent.md
+    - 6. Coded Agents & Production Readiness: day-2/6-coded-agents-and-production-readiness.md
+    - 7. Reflection & Office Hours Handoff: day-2/7-reflection-and-office-hours-handoff.md
   - Days 3-10 — Office Hours: days-3-10-office-hours.md
   - Resources: resources.md
 

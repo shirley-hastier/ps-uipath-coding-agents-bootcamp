@@ -71,7 +71,7 @@ Tomorrow moves from a single small agent to enterprise-shaped patterns:
 - Evals, Quality Gates & Production Readiness
 - Office Hours Handoff & Next Steps
 
-See [Day 2](../day-2/index.md) for the full agenda once it's published.
+See [Day 2](../day-2/index.md) for the full module.
 
 ## After today
 
