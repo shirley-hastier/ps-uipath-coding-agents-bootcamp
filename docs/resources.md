@@ -1,30 +1,41 @@
 # Resources
 
-## Official UiPath resources
+!!! info "Internal vs. external"
+    This site is public, but this bootcamp is delivered to both **UiPath
+    employees/partners** and **external customer cohorts**. Resources below
+    are labeled so a customer-facing coach knows what a participant can
+    actually reach.
 
-- UiPath for Coding Agents Deep Dive — UiPath Academy course
-- UiPath for Coding Agents — Product page
+## External-facing resources
+
+Usable by anyone, including customer participants — no UiPath internal
+access required.
+
+- [UiPath for Coding Agents Deep Dive](https://academy.uipath.com/courses/uipath-for-coding-agents-deep-dive) — UiPath Academy course
+- [UiPath Coded Apps](https://academy.uipath.com/courses/uipath-coded-apps) — UiPath Academy course
 - [UiPath skills](https://github.com/UiPath/skills) — GitHub repo
-- UiPath CLI — npm package `@uipath/cli`
-- UiPath Coding Agents Workshop — Partner Enablement
+- [UiPath CLI](https://www.npmjs.com/package/@uipath/cli) — npm package `@uipath/cli`
 
-## UiPath documentation
+### UiPath documentation
 
-- About UiPath CLI
-- Agents best practices
-- Agents — Evaluations
-- Agents — Guardrails
-- About MCP Servers
-- UiPath SDKs
-- UiPath Quickstart Guide: UiPath Coded MCP Servers
-- Agents — Deploying conversational agents
+- [About UiPath CLI](https://docs.uipath.com/uipath-cli/standalone/latest/user-guide/about-uipath-cli)
+- [Agents best practices](https://docs.uipath.com/agents/automation-cloud/latest/user-guide/best-practices)
+- [Agents — Evaluations](https://docs.uipath.com/agents/automation-cloud/latest/user-guide/agent-evaluations)
+- [Agents — Guardrails](https://docs.uipath.com/agents/automation-cloud/latest/user-guide/out-of-the-box-guardrails)
+- [About MCP Servers](https://docs.uipath.com/orchestrator/automation-cloud/latest/user-guide/about-mcp-servers)
+- [UiPath SDKs](https://docs.uipath.com/sdk/other/latest/developer-guide/uipath-sdks)
+- [UiPath Quickstart Guide: UiPath Coded MCP Servers](https://uipath.github.io/uipath-python/mcp/quick_start/)
+- [Agents — Deploying conversational agents](https://docs.uipath.com/agents/automation-cloud/latest/user-guide/conversational-agents-deployment)
 
-!!! warning "Needs validation"
-    The master deck links several of these as clickable references (including
-    a Claude Code setup step-by-step guide hosted on UiPath's internal
-    Slack). Confirm current, shareable URLs for each item before publishing
-    this page to participants — internal links won't resolve for
-    customer-facing cohorts.
+## Internal / partner resources
+
+Require UiPath employee or partner access — **do not share these links
+directly with external customer participants**; point them to an
+equivalent public resource instead, or have your coach walk through the
+content live.
+
+- **UiPath Coding Agents Workshop** — Partner Enablement
+- [UiPath for Coding Agents — Product page](https://uipath.highspot.com/items/6a02fd4ed88f200f2480c24c) — hosted on Highspot (UiPath/partner login required)
 
 ## Support
 
