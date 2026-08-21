@@ -34,7 +34,7 @@ directly with external customer participants**; point them to an
 equivalent public resource instead, or have your coach walk through the
 content live.
 
-- [UiPath Coding Agents Workshop](https://uipath-practice.github.io/CodingAgentsCourse/) — Partner Enablement lab guide (the sibling workshop this site's own framework is based on)
+- [UiPath Coding Agents Workshop](https://uipath-practice.github.io/CodingAgentsCourse/) — Partner Enablement lab guide
 - [UiPath for Coding Agents — Product page](https://uipath.highspot.com/items/6a02fd4ed88f200f2480c24c) — hosted on Highspot (UiPath/partner login required)
 
 ## Support
