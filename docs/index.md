@@ -1,30 +1,46 @@
 # PS UiPath for Coding Agents Bootcamp
 
-Welcome! This is the hands-on handbook for the **Professional Services UiPath
-Coding Agents Bootcamp** — a practical course on building UiPath automations,
-agents, and Maestro orchestrations with the help of AI coding agents
-(Claude Code, the `uip` CLI, and UiPath skills).
+Welcome! This is the companion lab guide for the **Professional Services Coding
+Agents Builder Bootcamp** — a 2-week, access-aware enablement program that gets
+every attendee to a working, demo-ready automation built with the help of a
+coding agent (Claude Code, Codex, Cursor, or your preferred tool) and the
+UiPath platform.
 
 !!! tip "Training Environment"
     Log in at **[{{ training_url }}]({{ training_url }})** using tenant
     **{{ training_tenant }}**. ({{ env_label }})
 
-## What you'll learn
+    Confirm this against what your coach announces on Day 1 — the environment
+    and tenant are decided per cohort. See
+    [Environment Setup](day-1/2-environment-setup.md).
 
-- How to install and use the `uip` CLI and UiPath skills alongside a coding agent
-- How to scaffold, build, and run your first coding agent
-- How to move from a single agent to a production-style orchestration
+## Who this guide is for
 
-## How this bootcamp is organized
+This guide serves two audiences at once:
 
-[[[
-**Getting Started**
+- **Coaches / instructors** — each module has a *Coach View* with talking
+  points, demo scripts, and recovery guidance.
+- **Participants** — each module has a *Participant View* with the exact
+  steps, prompts, and commands to follow along.
 
-Install the tooling, practice the CLI, and build your first agent end to end.
-|50|
-**Next Steps**
+## How the bootcamp is organized
 
-Where to go after the fundamentals — deeper project patterns and resources.
-]]]
+| When | Session | Purpose |
+|---|---|---|
+| [Day 1](day-1/index.md) | Instructor-led: foundations, setup, skills, CLI, prompting, first build | Get everyone to a first working agent |
+| Day 2 *(coming soon)* | Instructor-led: agent design patterns, MCP, HITL, conversational agents, evals, governance | Extend and stabilize the build path |
+| [Days 3–10](days-3-10-office-hours.md) | Daily office hours + checkpoints | Remove blockers, refine your use case, track progress toward the Day 10 demo |
 
-Use the navigation above to move through the lessons in order.
+Read the [Program Overview](program-overview.md) first if you want the full
+shape of the two weeks before diving into Day 1.
+
+## Source materials for this guide
+
+This guide is built from the bootcamp master deck plus delivery transcripts
+from the private-preview customer pilot and the internal 101 cross-training
+sessions. Where the transcripts disagree with each other, or a detail
+couldn't be confirmed from either source, it's marked:
+
+!!! warning "Needs validation"
+    Example of how open items are flagged throughout this guide — confirm
+    with the instructor or technical owner before relying on it live.

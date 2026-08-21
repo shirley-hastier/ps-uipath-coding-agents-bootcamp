@@ -4,4 +4,10 @@ venv/
 __pycache__/
 *.pyc
 .env
+
+# Raw source material (master deck, delivery transcripts) — private,
+# potentially contains attendee names/questions. Not for git history even
+# though this repo is private. Mirrors the pattern of the original
+# CodingAgentsCourse repo's knowledge-base/ exclusion.
+assets/
 .DS_Store
