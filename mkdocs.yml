@@ -5,6 +5,7 @@ site_author: Shirley Hastier
 
 theme:
   name: material
+  logo: assets/images/logo.png
   font:
     text: Inter
   palette:

@@ -9,5 +9,8 @@ __pycache__/
 # potentially contains attendee names/questions. Not for git history even
 # though this repo is private. Mirrors the pattern of the original
 # CodingAgentsCourse repo's knowledge-base/ exclusion.
-assets/
+# Leading slash anchors this to the repo root only -- otherwise it also
+# matches docs/assets/, which is where the site's own published images
+# (logo, favicon) belong and must NOT be ignored.
+/assets/
 .DS_Store
