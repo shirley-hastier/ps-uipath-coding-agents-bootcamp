@@ -1,10 +1,14 @@
 # PS UiPath for Coding Agents Bootcamp
 
+[[[
 Welcome! This is the companion lab guide for the **Professional Services Coding
 Agents Builder Bootcamp** — a 2-week, access-aware enablement program that gets
 every attendee to a working, demo-ready automation built with the help of a
 coding agent (Claude Code, Codex, Cursor, or your preferred tool) and the
 UiPath platform.
+|50|
+![](assets/images/hero-tunnel.png)
+]]]
 
 !!! tip "Training Environment"
     Log in at **[{{ training_url }}]({{ training_url }})** using tenant
@@ -28,7 +32,7 @@ This guide serves two audiences at once:
 | When | Session | Purpose |
 |---|---|---|
 | [Day 1](day-1/index.md) | Instructor-led: foundations, setup, skills, CLI, prompting, first build | Get everyone to a first working agent |
-| Day 2 *(coming soon)* | Instructor-led: agent design patterns, MCP, HITL, conversational agents, evals, governance | Extend and stabilize the build path |
+| [Day 2](day-2/index.md) | Instructor-led: agent design patterns, MCP, HITL, conversational agents, evals, governance | Extend and stabilize the build path |
 | [Days 3–10](days-3-10/index.md) | Daily office hours + checkpoints | Remove blockers, refine your use case, track progress toward the Day 10 demo |
 
 Read the [Program Overview](program-overview.md) first if you want the full
