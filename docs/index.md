@@ -91,4 +91,4 @@ reviewed and validated by the human author before publishing.
 
 **Author:** Shirley Hastier, Automation Developer — UiPath Professional
 Services
-**Contact:** shirley.hastier@uipath.com
+**Contact:** [shirley.hastier@uipath.com](mailto:shirley.hastier@uipath.com)
