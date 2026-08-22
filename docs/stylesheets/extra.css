@@ -70,6 +70,7 @@
 .ratio-row {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   gap: 1.5rem;
   margin: 1.5rem 0;
@@ -77,53 +78,67 @@
 }
 
 .ratio-circle {
-  width: 160px;
-  height: 160px;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 0.15rem;
+  flex-shrink: 0;
 }
 
 .ratio-icon svg {
-  width: 1.75rem;
-  height: 1.75rem;
   fill: currentcolor;
 }
 
 .ratio-pct {
-  font-size: 1.3rem;
   font-weight: 700;
   margin: 0;
+  line-height: 1.1;
 }
 
 .ratio-label {
-  font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.06em;
   margin: 0;
+  line-height: 1.1;
 }
 
+/* Diameter scaled so CIRCLE AREA is proportional to the percentage it
+   represents (diameter ~ sqrt(value)) -- an honest size difference
+   rather than an exaggerated one, since the numbers are also printed. */
 .ratio-teach {
+  width: 155px;
+  height: 155px;
   background: #cdeefc;
   color: #0b3558;
 }
+.ratio-teach .ratio-icon svg { width: 1.65rem; height: 1.65rem; }
+.ratio-teach .ratio-pct { font-size: 1.25rem; }
+.ratio-teach .ratio-label { font-size: 0.72rem; }
 
 .ratio-demo {
+  width: 127px;
+  height: 127px;
   background: #ffd7d0;
   color: #6d2a20;
 }
+.ratio-demo .ratio-icon svg { width: 1.4rem; height: 1.4rem; }
+.ratio-demo .ratio-pct { font-size: 1.05rem; }
+.ratio-demo .ratio-label { font-size: 0.65rem; }
 
 .ratio-build {
+  width: 200px;
+  height: 200px;
   background: #9b3fae;
   color: #ffffff;
 }
+.ratio-build .ratio-icon svg { width: 2.1rem; height: 2.1rem; }
+.ratio-build .ratio-pct { font-size: 1.6rem; }
+.ratio-build .ratio-label { font-size: 0.85rem; }
 
 @media (max-width: 600px) {
   .ratio-circle {
-    width: 130px;
-    height: 130px;
+    transform: scale(0.75);
   }
 }
