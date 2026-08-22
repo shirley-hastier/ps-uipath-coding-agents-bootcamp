@@ -22,3 +22,108 @@
     flex-direction: column;
   }
 }
+
+/* Home page hero: text + image, image fills its whole panel height */
+.hero {
+  display: flex;
+  align-items: stretch;
+  gap: 2rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.hero-text {
+  flex: 1 1 50%;
+  display: flex;
+  align-items: center;
+}
+
+.hero-image {
+  flex: 1 1 50%;
+  min-height: 280px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.hero-image p {
+  height: 100%;
+  margin: 0;
+}
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 60% 50%;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero-image {
+    min-height: 220px;
+  }
+}
+
+/* Home page Teach/Demo/Build ratio circles */
+.ratio-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.ratio-circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.15rem;
+}
+
+.ratio-icon svg {
+  width: 1.75rem;
+  height: 1.75rem;
+  fill: currentcolor;
+}
+
+.ratio-pct {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.ratio-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  margin: 0;
+}
+
+.ratio-teach {
+  background: #cdeefc;
+  color: #0b3558;
+}
+
+.ratio-demo {
+  background: #ffd7d0;
+  color: #6d2a20;
+}
+
+.ratio-build {
+  background: #9b3fae;
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .ratio-circle {
+    width: 130px;
+    height: 130px;
+  }
+}

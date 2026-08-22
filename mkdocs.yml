@@ -1,4 +1,4 @@
-site_name: PS UiPath for Coding Agents Bootcamp
+site_name: Professional Services UiPath for Coding Agents Builder Bootcamp
 site_url: https://shirley-hastier.github.io/ps-uipath-coding-agents-bootcamp/
 site_description: Hands-on bootcamp handbook for building UiPath agents and Maestro orchestrations with coding agents
 site_author: Shirley Hastier
@@ -43,6 +43,9 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - attr_list
   - md_in_html
   - tables

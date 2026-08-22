@@ -1,4 +1,4 @@
-# PS UiPath for Coding Agents Bootcamp — Site
+# Professional Services UiPath for Coding Agents Builder Bootcamp — Site
 
 Hands-on bootcamp handbook teaching Professional Services how to build UiPath
 agents and Maestro orchestrations with coding agents (Claude Code) and the

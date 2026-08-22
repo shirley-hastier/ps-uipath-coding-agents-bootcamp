@@ -79,6 +79,10 @@ Teach what attendees need immediately to move **their own** use case
 forward. Every conceptual segment is followed by a lab, a checkpoint, or a
 decision — participants should be building by midday on Day 1.
 
+| Teach | Demo | Build |
+|---|---|---|
+| 30% | 20% | 50% hands-on |
+
 | Day | Focus |
 |---|---|
 | Day 1 | Foundations and setup · UiPath skills and the `uip` CLI · Prompting, first build, first debug |
