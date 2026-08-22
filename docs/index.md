@@ -79,13 +79,16 @@ This guide serves two audiences at once:
 Read the [Program Overview](program-overview.md) first if you want the full
 shape of the two weeks before diving into Day 1.
 
-## Source materials for this guide
+## About this guide
 
 This guide is built from the bootcamp master deck plus delivery transcripts
 from the private-preview customer pilot and the internal 101 cross-training
-sessions. Where the transcripts disagree with each other, or a detail
-couldn't be confirmed from either source, it's marked:
+sessions.
 
-!!! warning "Needs validation"
-    Example of how open items are flagged throughout this guide — confirm
-    with the instructor or technical owner before relying on it live.
+In the development of this lab guide, we engaged in collaboration with a
+coding agent — Claude, model Sonnet 5 — with all content thoroughly
+reviewed and validated by the human author before publishing.
+
+**Author:** Shirley Hastier, Automation Developer — UiPath Professional
+Services
+**Contact:** shirley.hastier@uipath.com
