@@ -22,6 +22,21 @@ attendee's use case.
 | Day 2 | Implementation patterns, agent tools, MCP servers, conversational agents, external agents, DU/IXP, evals, governance | Extend and stabilize the build path |
 | Days 3–10 | Daily office hours + checkpoints | Remove blockers, refine use cases, track progress |
 
+## Daily schedule (Days 1–2)
+
+| Time (Central) | Segment |
+|---|---|
+| 9:00 AM | Start |
+| 10:00 AM | Break (30 min) |
+| 12:00 PM | Lunch (1 hr) |
+| 2:30 PM | Break (30 min) |
+| 5:00 PM | End |
+
+!!! note "Time zone may vary by cohort"
+    This schedule is shown in **Central Time**. Confirm the actual time
+    zone with your coach before Day 1 — it can change depending on where
+    a given cohort's participants are located.
+
 ### Executive tracking checkpoints
 
 | Day | Milestone |
