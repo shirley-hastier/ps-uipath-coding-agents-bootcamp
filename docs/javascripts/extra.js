@@ -14,3 +14,29 @@ document.addEventListener("DOMContentLoaded", function () {
     link.setAttribute("rel", "noopener");
   });
 });
+
+// Checklist items ("- [ ] ...") render as clickable checkboxes via
+// pymdownx.tasklist. Persist their checked state to localStorage, keyed by
+// page path + item text, so ticking off a prerequisite/checkpoint survives
+// a reload -- purely client-side, this browser only, nothing sent anywhere.
+document.addEventListener("DOMContentLoaded", function () {
+  var boxes = document.querySelectorAll(
+    ".md-content .task-list-control input[type='checkbox']"
+  );
+  boxes.forEach(function (box, index) {
+    var item = box.closest("li");
+    var text = item ? item.innerText.trim().replace(/\s+/g, " ") : "item-" + index;
+    var key = "checklist::" + location.pathname + "::" + text;
+
+    var saved = window.localStorage ? localStorage.getItem(key) : null;
+    if (saved !== null) {
+      box.checked = saved === "true";
+    }
+
+    box.addEventListener("change", function () {
+      if (window.localStorage) {
+        localStorage.setItem(key, box.checked);
+      }
+    });
+  });
+});
