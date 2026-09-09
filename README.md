@@ -9,6 +9,10 @@ Built on the same MkDocs framework as the
 (MkDocs Material + a `mkdocs-macros` environment-variable module + a small
 two-column layout hook).
 
+## Access the "Lab Guide" using the link below
+
+[Professional Services UiPath for Coding Agents Builder Bootcamp](https://shirley-hastier.github.io/ps-uipath-coding-agents-bootcamp/)
+
 ## How it works
 
 ```
