@@ -3,47 +3,10 @@
 *Roughly 15-20 minutes to close Day 2 — and the instructor-led portion of
 the bootcamp.*
 
-=== "Coach View"
 
-    **Purpose**
-
-    Close the two-day ILT portion with participants clear on what they've
-    built, what's still open, and exactly how office hours work from here.
-
-    **Key message**
-
-    The instructor-led days are over; the next eight days are self-paced
-    build time with daily check-ins. By Day 2 (today), every attendee
-    should have their use case selected — that's the executive-tracked
-    milestone this whole session was building toward.
-
-    **Questions to ask participants**
-
-    - "How did you find the two days — did you learn something new? Do you
-      feel ready to have this conversation with a customer or peer?"
-    - "What's still unresolved from your build today that you'll bring to
-      office hours?"
-
-    **Recovery guidance**
-
-    If a participant's Day 2 build is genuinely broken (not just
-    incomplete), don't spend remaining time force-fixing it live — capture
-    it as the first office-hours agenda item and move to reflection so the
-    close doesn't run over.
-
-    **Closing framing worth reusing verbatim**
-
-    > "The goal was for you to have exposure to how to use these coding
-    > agents and how they can help you be more productive — to feel more
-    > confident in a customer conversation or with your peers, so when
-    > they start talking about this, you know exactly what it is and how
-    > you can use it."
-
-=== "Participant View"
-
-    Reflect using the questions above, and come to your first office-hours
-    session with your use case named and your Day 2 build's open issues
-    written down.
+Reflect using the questions above, and come to your first office-hours
+session with your use case named and your Day 2 build's open issues
+written down.
 
 ## Checkpoint: Day 2 close
 

@@ -2,52 +2,12 @@
 
 *Roughly 15-20 minutes, instruction + short demo.*
 
-=== "Coach View"
 
-    **Purpose**
+**What you'll take from this**
 
-    Give participants a concrete menu of HITL patterns, rather than a
-    single generic "add a human review step" answer.
-
-    **Key message**
-
-    Escalation isn't one feature — it's a design decision with at least
-    three viable implementations, chosen based on who the human is and how
-    they'll interact with the work.
-
-    **What to show on screen**
-
-    An agent's built-in escalation configuration; a Maestro BPMN flow with
-    a **User Task** node added; the difference between a plain **App** and
-    an **Action App**.
-
-    **Suggested narration**
-
-    > "If we give an agent too much freedom, and it does something it
-    > shouldn't, that's a problem. Pay close attention to authorization
-    > prompts — if the action matches your intent, allow it; otherwise,
-    > deny or redirect it."
-
-    **Likely questions & recommended answers**
-
-    | Question | Answer |
-    |---|---|
-    | "What's the difference between an App and an Action App?" | A regular App is a standalone deployed application. An **Action App** surfaces in **Action Center**, so a large volume of pending human-in-the-loop tasks can be tracked, assigned, and worked across a team — needed once you have more than a handful of ad-hoc approvals. |
-    | "Is there a dedicated 'escalation' node in Maestro?" | Not a specifically-named one — you get this behavior via a **User Task** node in the BPMN flow. |
-    | "Do conversational agents need human-in-the-loop too?" | Rarely, based on what's been observed — a conversational agent's natural human-facing turn-taking often *is* the human-in-the-loop mechanism. It's still an option if you need it, just less commonly reached for. |
-
-    **Transition into the hands-on lab**
-
-    "You've now seen inputs, context, tools, and escalation options — let's
-    put them together and build a conversational agent."
-
-=== "Participant View"
-
-    **What you'll take from this**
-
-    Three concrete escalation patterns to choose from for your own use
-    case, instead of defaulting to "add a review step" without thinking
-    through who's reviewing and how.
+Three concrete escalation patterns to choose from for your own use
+case, instead of defaulting to "add a review step" without thinking
+through who's reviewing and how.
 
 ## Three HITL implementation options
 

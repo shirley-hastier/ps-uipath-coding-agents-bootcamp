@@ -3,64 +3,11 @@
 *Roughly 15-20 minutes of instruction before the hands-on lab. This is the
 last stop before building — keep the examples concrete.*
 
-=== "Coach View"
 
-    **Purpose**
+**What you'll take into the lab**
 
-    Give participants a repeatable prompting loop and a short list of
-    habits that prevent the most common failure mode: an underspecified
-    prompt producing something that technically runs but isn't what the
-    business needed (or isn't even the right *kind* of agent).
-
-    **Key message**
-
-    Coding agents are non-deterministic. The fix isn't a "magic prompt" —
-    it's a loop (explore, plan, code, verify, run, commit) and a habit of
-    being specific about the one or two things that actually matter for
-    this task.
-
-    **What to emphasize**
-
-    - **"Low-code UiPath agent" vs. a generic coded agent.** This is the
-      single most repeated warning across every delivery of this bootcamp:
-      if your prompt just says "build an agent," some participants — and
-      at least one real customer — have ended up with a Python/coded agent
-      instead of a UiPath low-code agent. Say the words "UiPath low-code
-      agent" explicitly.
-    - Plan Mode is not mandatory overhead — it's most valuable when you're
-      *not* already sure exactly what you want. If you can fully describe
-      the outcome up front, skip it and let the agent ask permission for
-      specific actions as it goes.
-    - Iteration is expected. "More than 90% would not be good enough" on a
-      first pass is a normal outcome, not a failure.
-
-    **Suggested narration**
-
-    > "Garbage in, garbage out is a well-known phrase in software — it
-    > applies here too. The more content and context you provide, the
-    > better the result, and it also helps with token efficiency — the
-    > agent spends fewer tokens exploring things you could have just told
-    > it."
-
-    **Likely questions & recommended answers**
-
-    | Question | Answer |
-    |---|---|
-    | "Why did Plan Mode ask me something totally different from what it asked my neighbor, for the same prompt?" | Expected — coding agents are non-deterministic. Different clarifying questions from an identical prompt is normal, not a bug. |
-    | "Should I always turn Plan Mode on?" | No. It's most useful when you're underspecified or exploring; if you already know exactly what you want, describing it fully in the prompt is often faster. |
-    | "Do slash commands like `/clear` work the same in every coding agent?" | The core commands are conceptually similar across tools, but exact syntax varies. Verify with your specific agent. |
-
-    **Transition into the hands-on lab**
-
-    "Let's put this into practice — you're going to build a real agent in
-    the next segment, and you'll pick the prompt yourself."
-
-=== "Participant View"
-
-    **What you'll take into the lab**
-
-    A short checklist of habits, not a script to memorize. You'll apply
-    these directly in the next exercise.
+A short checklist of habits, not a script to memorize. You'll apply
+these directly in the next exercise.
 
 ## The core workflow
 

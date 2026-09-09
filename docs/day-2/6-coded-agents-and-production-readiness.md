@@ -3,56 +3,12 @@
 *Roughly 20-30 minutes, instruction + demo. This closes out the concept
 material before wrap-up.*
 
-=== "Coach View"
 
-    **Purpose**
+**What you'll take from this**
 
-    Show the pro-code option for teams that need more control than
-    low-code allows, and close the loop on what "production-ready" actually
-    means for an agent-built solution.
-
-    **Key message**
-
-    Pro-code isn't a rejection of everything taught so far — it's for
-    teams with software-engineering depth who need more sophistication
-    (custom orchestration logic, open frameworks) while still publishing
-    back into the governed UiPath platform.
-
-    **What to show on screen**
-
-    A pro-coded app pulling live data from an agent's job history (a
-    dashboard), and — if time allows — the troubleshooting pattern of
-    pasting a failed job's Orchestrator URL directly into a coding agent.
-
-    **Suggested narration (troubleshooting demo)**
-
-    > "We've done plan mode, we built, we tested with evaluations, we
-    > deployed. Something we haven't done yet is troubleshooting."
-
-    Find a failed job in Orchestrator Monitoring, paste **just its URL**
-    into the coding agent, and ask it to diagnose the failure — no manual
-    log downloads required.
-
-    **Likely questions & recommended answers**
-
-    | Question | Answer |
-    |---|---|
-    | "Does a successful publish/pack mean it's deployed and ready?" | No — publishing a package to Orchestrator and registering/creating the project in Studio Web (or an app) are separate steps. Confirm both explicitly. |
-    | "How much can I trust the first version an agent builds?" | Treat it as roughly 75% of the way there on a first pass. Iterate 2-3+ times rather than either over-engineering the first prompt or accepting the first output as final. |
-    | "Are coding agents equally strong at every artifact type?" | Not based on what's been observed — they're notably strong at generating agent system/user prompts and pro-coded apps, and comparatively weaker (still useful, but slower/less reliable) at full RPA workflow or Maestro flow authoring from scratch. |
-
-    **Transition into reflection**
-
-    "That's the full arc: build, ground, tool-up, escalate appropriately,
-    and now, get production-ready. Let's close out the day."
-
-=== "Participant View"
-
-    **What you'll take from this**
-
-    When to reach for a coded agent instead of low-code, what "production
-    ready" checks for beyond "it built successfully," and a troubleshooting
-    pattern (paste the job URL) you'll use constantly in office hours.
+When to reach for a coded agent instead of low-code, what "production
+ready" checks for beyond "it built successfully," and a troubleshooting
+pattern (paste the job URL) you'll use constantly in office hours.
 
 ## Coded agents, briefly
 

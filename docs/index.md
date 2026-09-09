@@ -61,12 +61,8 @@ checkpoint, or a decision.
 
 ## Who this guide is for
 
-This guide serves two audiences at once:
-
-- **Coaches / instructors** — each module has a *Coach View* with talking
-  points, demo scripts, and recovery guidance.
-- **Participants** — each module has a *Participant View* with the exact
-  steps, prompts, and commands to follow along.
+This guide is written for **participants** — every module gives you the
+exact steps, prompts, and commands to follow along, day by day.
 
 ## How the bootcamp is organized
 

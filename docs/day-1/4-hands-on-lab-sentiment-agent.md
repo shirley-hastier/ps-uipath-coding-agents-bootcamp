@@ -62,93 +62,23 @@ debugging much faster.
 
 ## Demo
 
-=== "Coach View"
 
-    **Purpose**
+**What you'll observe**
 
-    Show the full loop once, live, before participants try it themselves —
-    including a deliberately underspecified prompt, so they see Plan
-    Mode's clarifying questions in action.
+The coach building the same kind of agent you're about to build, using
+a deliberately vague prompt so you can see what Plan Mode asks for.
 
-    **Key message**
+**What you'll reproduce**
 
-    A vague prompt is not wrong, it's an opportunity — Plan Mode will
-    surface the decisions you didn't make explicit. Watch it happen, then
-    make your own prompt more specific when you build your own agent.
+The same loop, but with your **own** prompt and your **own** choices at
+each clarifying question — this is intentional. Everyone should get a
+slightly different agent.
 
-    **What to show on screen**
+**Why this matters**
 
-    1. Type a deliberately generic prompt: *"Build a UiPath sentiment
-       analysis agent"* — no folder, no agent type, no output shape
-       specified.
-    2. Turn on Plan Mode. Let the clarifying questions play out live: input
-       format, output shape (label only vs. label + confidence vs. label +
-       confidence + rationale), whether to include evaluations, deployment
-       target.
-    3. Approve the plan, let it build.
-    4. Deploy, then run one test input live and show the result in Studio
-       Web.
-
-    **Expected demo outcome**
-
-    A published low-code agent with at least a default evaluator, one
-    successful test run visible in Studio Web.
-
-    **Questions to ask participants**
-
-    - "What did Plan Mode ask you that it *didn't* ask your neighbor, for a
-      similar prompt?"
-    - "If you had specified the output schema up front, what would you have
-      told it?"
-
-    **Likely questions & recommended answers**
-
-    | Question | Answer |
-    |---|---|
-    | "My agent didn't create evaluation sets automatically — is that broken?" | No — this varies by run. If missing, just ask: "create evaluation sets for this solution, covering every classification (positive/negative/neutral)." |
-    | "My evaluation score is much lower than my neighbor's for what looks like the same agent" | Very likely the default evaluator is scoring more than the label (e.g., also grading free-text rationale text, which varies run to run). Edit the evaluator to check only the field that matters, or build a custom evaluator (Day 2 topic, but you can preview it here). |
-    | "Studio Web still shows my agent as a draft, but the CLI said it published successfully" | Publishing a package to Orchestrator and creating/registering the project in Studio Web are two separate steps. Ask your agent to also upload/register it in Studio Web. |
-
-    **Recovery guidance if the demo fails**
-
-    Live demos of this exact lab have hit real, non-scripted failures —
-    treat them as teaching moments rather than derailments:
-
-    - **Wrong tenant deployed to** — re-authenticate with the explicit
-      `--authority`/`--tenant` form and ask the agent to redeploy. This has
-      happened live to the instructor, not just participants.
-    - **"Assertion failed to execute" on an evaluation run** — the
-      generated evaluation set is likely missing expected-output values.
-      Export the evaluation set's JSON schema, hand it back to the agent
-      with instructions to regenerate a fully-formed set including expected
-      outputs, and re-import.
-    - If nothing works on screen, fall back to narrating the architecture
-      diagram above and let participants build ahead in parallel — don't
-      block the whole room on one demo failure.
-
-    **Transition into the participant exercise**
-
-    "Now it's your turn — and this time, you'll write your own prompt, not
-    copy mine."
-
-=== "Participant View"
-
-    **What you'll observe**
-
-    The coach building the same kind of agent you're about to build, using
-    a deliberately vague prompt so you can see what Plan Mode asks for.
-
-    **What you'll reproduce**
-
-    The same loop, but with your **own** prompt and your **own** choices at
-    each clarifying question — this is intentional. Everyone should get a
-    slightly different agent.
-
-    **Why this matters**
-
-    You'll reuse this exact loop (build → deploy → evaluate → iterate) for
-    every remaining exercise in the bootcamp, including your real use case.
-    Get comfortable with it now on a low-stakes example.
+You'll reuse this exact loop (build → deploy → evaluate → iterate) for
+every remaining exercise in the bootcamp, including your real use case.
+Get comfortable with it now on a low-stakes example.
 
 ## Exercise: Build, Deploy, and Evaluate Your Sentiment Agent
 

@@ -3,71 +3,17 @@
 *Roughly 30-45 minutes — this segment ran long in every delivery due to
 real connector/auth troubleshooting. Budget accordingly.*
 
-=== "Coach View"
 
-    **Purpose**
+**What you'll build**
 
-    Show how an agent takes real action through Integration Service
-    connectors, and give an honest, working explanation of MCP servers —
-    including their current rough edges.
+A custom Integration Service connector from an existing API's Swagger/
+OpenAPI definition, published and attached to an agent as a tool.
 
-    **Key message**
+**Why this matters**
 
-    > "The agent, the LLM, is going to be the brain — but to take action,
-    > you need tools."
-
-    Tools are the hands and feet. An Integration Service connector is the
-    most reliable way to give an agent a new tool today; MCP is the
-    direction the platform is heading, but treat it as early and verify
-    it actually worked, not just that the agent said it did.
-
-    **What to show on screen**
-
-    Studio Web → Agent Builder → Tools panel (categories: RPA workflows,
-    APIs, other agents, Integration Service activities), then Integration
-    Service → Connectors → "Build your own connector" using a Swagger/
-    OpenAPI JSON file (Orchestrator's own API is a safe, always-available
-    example).
-
-    **Likely questions & recommended answers**
-
-    | Question | Answer |
-    |---|---|
-    | "Do I need to specify the exact API endpoint in my prompt?" | No — describe the tool's *purpose*, not its implementation. The agent resolves the actual endpoint from the connector's metadata at runtime. |
-    | "My custom connector isn't showing up as a tool option" | Check it's actually **published** — an unpublished connector never appears. Also search under **Activities**, not "Connections," when adding it as a tool. |
-    | "Is there a limit to how many tools one agent can have?" | Genuinely unknown as of this cohort's delivery — this was asked live and never answered. Flag it to your coach/CADE contact rather than guessing. |
-    | "One agent with many tools, or several specialized agents?" | No universal answer — it's a solution-design trade-off (an extra agent means an extra LLM call). Think manager/specialist-team: a manager agent that delegates to focused specialist agents, versus one agent doing everything itself. |
-
-    **Recovery guidance if the MCP demo fails**
-
-    Across two live deliveries, an agent reported success creating an
-    MCP-based tool but had **not actually created the underlying MCP
-    server** — the agent's own status report was wrong. If this happens:
-
-    1. Don't keep retrying the same prompt — treat it as a known pre-GA
-       gap, not something the participant did wrong.
-    2. Fall back to a custom Integration Service connector (documented
-       below) for anything that needs a real API call.
-    3. Or fall back further to a tool-free agent (e.g., using only the
-       built-in web search tool) so the lab still produces a working demo.
-
-    **Transition into the next segment**
-
-    "Tools let an agent act — next, let's talk about when a human needs to
-    stay in that loop."
-
-=== "Participant View"
-
-    **What you'll build**
-
-    A custom Integration Service connector from an existing API's Swagger/
-    OpenAPI definition, published and attached to an agent as a tool.
-
-    **Why this matters**
-
-    This is the most reliable way today to connect an agent to a system
-    that doesn't have a pre-built UiPath connector — and you'll very likely
-    need it for your own use case.
+This is the most reliable way today to connect an agent to a system
+that doesn't have a pre-built UiPath connector — and you'll very likely
+need it for your own use case.
 
 ## What is MCP?
 

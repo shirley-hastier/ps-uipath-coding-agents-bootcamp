@@ -43,69 +43,17 @@ Applications, Agents, Deploy)
 
 ## Demo
 
-=== "Coach View"
 
-    **Purpose**
+**What you'll observe**
 
-    Model the exact sequence participants will follow: specific prompt →
-    plan mode → clarifying questions → attempted tool creation → discover
-    the tool wasn't actually created → recover with a fallback.
+A live build that includes a real failure (an MCP-tool attachment that
+silently didn't work) and a live recovery.
 
-    **Key message**
+**What you'll reproduce**
 
-    > "Say 'UiPath conversational agent' explicitly." A vague prompt has
-    > previously produced a Python/pro-coded conversational agent embedded
-    > in a pro-coded app instead of a native UiPath one — the same
-    > agent-type ambiguity from Day 1, showing up again here.
-
-    **What to show on screen**
-
-    1. New coding session, Plan Mode on.
-    2. A specific prompt naming the agent type, scope, read/write
-       boundary, and deployment target (see the exercise prompt below).
-    3. Let Plan Mode's clarifying questions play out.
-    4. Approve, let it build — including its attempt to create a tool.
-    5. When the "tool attachment" step reports done but doesn't actually
-       work, name it out loud: "this is a known gap, not something you did
-       wrong."
-    6. Pivot live to the fallback (a documentation/web-search-only agent,
-       or a custom Integration Service connector) and get a working demo.
-
-    **Expected demo outcome**
-
-    A deployed conversational agent that correctly answers in-scope
-    questions and correctly **declines** out-of-scope requests (e.g., asks
-    it to take an action, and it should say that's outside what it can do
-    given its current tools).
-
-    **Recovery guidance if the demo fails**
-
-    This is the demo where "failure" is part of the lesson. If the MCP
-    tool doesn't attach:
-
-    1. Say so plainly — don't paper over it.
-    2. Rebuild the same agent with only the built-in **web search** tool,
-       scoped to official documentation.
-    3. Show that a correctly-scoped agent still refuses out-of-scope asks
-       gracefully — that's a success, not a consolation prize.
-
-    **Transition into the participant exercise**
-
-    "Now build your own — pick a real, narrow task, and expect at least one
-    thing not to work exactly as planned."
-
-=== "Participant View"
-
-    **What you'll observe**
-
-    A live build that includes a real failure (an MCP-tool attachment that
-    silently didn't work) and a live recovery.
-
-    **What you'll reproduce**
-
-    The same pattern with your own scope: specific prompt, plan mode,
-    attempt a tool, verify it actually works (don't trust a "done" status
-    message alone), fall back if it doesn't.
+The same pattern with your own scope: specific prompt, plan mode,
+attempt a tool, verify it actually works (don't trust a "done" status
+message alone), fall back if it doesn't.
 
 ## Exercise: Build Your Conversational Agent
 

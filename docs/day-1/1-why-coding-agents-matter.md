@@ -4,70 +4,20 @@
 scene-setting, not hands-on. Keep it moving; the goal is context for the
 build that follows, not platform mastery.*
 
-=== "Coach View"
 
-    **Purpose**
+**What you'll observe**
 
-    Establish why this bootcamp exists before touching a keyboard.
-    Participants should leave this segment thinking about *their own*
-    business problem, not "which UiPath product should I learn."
+A short tour of the UiPath platform's four pillars and where coding
+agents fit in the overall development experience — this is context,
+not something you'll build yet.
 
-    **Key message**
+**Why this matters**
 
-    UiPath is not a collection of individual products — it's building
-    blocks (Agentic Automation, Business Orchestration, Agentic Testing,
-    Industry Solutions) that combine to deliver business outcomes. This
-    bootcamp focuses on the first two. Coding agents accelerate *how you
-    build* across that stack; they are part of the development experience,
-    not the runtime architecture.
-
-    **What to show on screen**
-
-    The UiPath Platform pillars slide, then the "From Coding Agents to
-    Production Solutions" stack diagram (builder toolchain → agentic
-    automation stack → enterprise landscape).
-
-    **Suggested narration**
-
-    > "Don't think about building an agent, an app, or an automation. Think
-    > about solving a business process, workflow, or technical problem. As
-    > you identify your project over the next two weeks, you'll combine
-    > capabilities across multiple layers of this stack."
-
-    **Questions to ask participants**
-
-    - "What process, workflow, or technical problem in your day-to-day work
-      would benefit from intelligent decision-making, automation,
-      orchestration, or human oversight?"
-
-    **Likely questions & recommended answers**
-
-    | Question | Answer |
-    |---|---|
-    | "Is this just AI writing code for us?" | No — coding agents accelerate the builder's work (boilerplate, integrations, tests, debugging), but the builder still owns the outcome. Say this explicitly; it's a recurring theme every delivery has reinforced. |
-    | "Which coding agent should I use?" | UiPath is agnostic — Claude Code, Codex, Cursor, GitHub Copilot, Gemini CLI, and OpenCode are all supported via UiPath skills. UiPath does **not** provide the coding-agent license itself. |
-
-    **Transition into the next segment**
-
-    "Before we talk about *why* this matters, let's ground it in data —
-    here's what builders are actually experiencing with AI coding tools
-    today."
-
-=== "Participant View"
-
-    **What you'll observe**
-
-    A short tour of the UiPath platform's four pillars and where coding
-    agents fit in the overall development experience — this is context,
-    not something you'll build yet.
-
-    **Why this matters**
-
-    Every exercise for the next two weeks maps back to one of these layers.
-    Knowing the vocabulary now (Agentic Automation vs. Business
-    Orchestration, builder toolchain vs. agentic automation stack) will
-    save you time later when a coach says "that's a tool-layer problem" or
-    "that belongs in orchestration."
+Every exercise for the next two weeks maps back to one of these layers.
+Knowing the vocabulary now (Agentic Automation vs. Business
+Orchestration, builder toolchain vs. agentic automation stack) will
+save you time later when a coach says "that's a tool-layer problem" or
+"that belongs in orchestration."
 
 ## The four pillars
 
