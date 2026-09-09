@@ -13,6 +13,12 @@ two-column layout hook).
 
 [Professional Services UiPath for Coding Agents Builder Bootcamp](https://shirley-hastier.github.io/ps-uipath-coding-agents-bootcamp/)
 
+> **This repo's `docs/` is generated — do not hand-edit it.** Content is
+> authored in a private companion repo
+> (`ps-uipath-coding-agents-bootcamp-coach`) and published here with the
+> Coach View sections stripped. Edits made directly here will be
+> overwritten by the next publish.
+
 ## How it works
 
 ```
