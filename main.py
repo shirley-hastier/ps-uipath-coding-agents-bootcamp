@@ -28,9 +28,9 @@ ENVIRONMENTS = {
         "env_label": "Staging (build & preview)",
     },
     "prod": {
-        "training_url": "https://cloud.uipath.com/tpenlabs",
-        "training_tenant": "CodingAgentsBootcamp",
-        "env_label": "Production",
+        "training_url": "https://staging.uipath.com/uspsenablement/portal_/home",
+        "training_tenant": "USTechnicalServices",
+        "env_label": "USPS Enablement (staging)",
     },
 }
 
