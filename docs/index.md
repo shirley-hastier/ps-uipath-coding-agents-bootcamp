@@ -15,7 +15,7 @@ Cursor, or your preferred tool) and the UiPath platform.
 
 ## Built to get you building fast
 
-> The bootcamp should get participants building by midday on Day 1.
+> The bootcamp should get you building by midday on Day 1.
 
 <div class="ratio-row" markdown>
 <div class="ratio-circle ratio-teach" markdown>
@@ -47,17 +47,11 @@ BUILD
 </div>
 </div>
 
-**Design principle:** teach what attendees need immediately to move their
-own use case forward. Every conceptual segment is followed by a lab, a
-checkpoint, or a decision.
-
 !!! tip "Training Environment"
-    Log in at **[{{ training_url }}]({{ training_url }})** using tenant
-    **{{ training_tenant }}**. ({{ env_label }})
+    Log in at your organization's **UiPath Automation Cloud**
 
-    Confirm this against what your coach announces on Day 1 — the environment
-    and tenant are decided per cohort. See
-    [Environment Setup](day-1/2-environment-setup.md).
+    Confirm the **tenant** with your coach and/or automation team lead — the environment
+    and tenant are decided per cohort.
 
 ## Who this guide is for
 
@@ -76,10 +70,6 @@ Read the [Program Overview](program-overview.md) first if you want the full
 shape of the two weeks before diving into Day 1.
 
 ## About this guide
-
-This guide is built from the bootcamp master deck plus delivery transcripts
-from the private-preview customer pilot and the internal 101 cross-training
-sessions.
 
 In the development of this lab guide, we engaged in collaboration with a
 coding agent — Claude, model Sonnet 5 — with all content thoroughly
