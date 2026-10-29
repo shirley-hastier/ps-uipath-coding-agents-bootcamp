@@ -18,5 +18,6 @@
 
 ## Support
 
-- Product feedback: use the `/uipath feedback` skill command from inside your
+!!! note "Product feedback"
+    Use the `/uipath feedback` skill command from inside your
   coding agent, or ask your coach for the current escalation channel.
