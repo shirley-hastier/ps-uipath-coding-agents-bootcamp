@@ -1,0 +1,1983 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Hands-on bootcamp handbook for building UiPath agents and Maestro orchestrations with coding agents">
+      
+      
+        <meta name="author" content="Shirley Hastier">
+      
+      
+        <link rel="canonical" href="https://shirley-hastier.github.io/ps-uipath-coding-agents-bootcamp/day-2/optional/orchestrator-coe-assistant/">
+      
+      
+        <link rel="prev" href="../uibank-ui-automation/">
+      
+      
+        <link rel="next" href="../pro-coded-sentiment-dashboard/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>C. Orchestrator CoE Assistant - Professional Services UiPath for Coding Agents Builder Bootcamp</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#optional-lab-c-orchestrator-assistant-for-the-automation-coe" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Professional Services UiPath for Coding Agents Builder Bootcamp" class="md-header__button md-logo" aria-label="Professional Services UiPath for Coding Agents Builder Bootcamp" data-md-component="logo">
+      
+  <img src="../../../assets/images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Professional Services UiPath for Coding Agents Builder Bootcamp
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              C. Orchestrator CoE Assistant
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../program-overview/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Program Overview
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../day-1/" class="md-tabs__link">
+          
+  
+  
+  Day 1 — Builder Foundations
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+  Day 2 — Enterprise Agent Patterns
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../days-3-10/" class="md-tabs__link">
+          
+  
+  
+  Days 3-10 — Office Hours
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../resources/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Resources
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Professional Services UiPath for Coding Agents Builder Bootcamp" class="md-nav__button md-logo" aria-label="Professional Services UiPath for Coding Agents Builder Bootcamp" data-md-component="logo">
+      
+  <img src="../../../assets/images/logo.png" alt="logo">
+
+    </a>
+    Professional Services UiPath for Coding Agents Builder Bootcamp
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../program-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Program Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Day 1 — Builder Foundations
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Day 1 — Builder Foundations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../day-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Day 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../day-1/1-why-coding-agents-matter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. UiPath Vision & Why Coding Agents Matter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../day-1/2-environment-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Environment Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../day-1/3-prompting-coding-agents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Prompting Coding Agents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../day-1/4-hands-on-lab-sentiment-agent/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Hands-On Lab — Build a Low-Code Agent
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../day-1/5-reflection-and-day-2-preview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Reflection & Day 2 Preview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Day 2 — Enterprise Agent Patterns
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Day 2 — Enterprise Agent Patterns
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Day 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1-agent-design-patterns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Common Agent Design Patterns
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2-context-grounding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Enterprise Data & Context Grounding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3-tools-and-integrations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Tool-Using Agents & Integrations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4-hitl-and-escalation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Human-in-the-Loop & Escalation Design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-hands-on-lab-conversational-agent/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Hands-On Lab — Build a Conversational Agent
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6-coded-agents-and-production-readiness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Coded Agents & Production Readiness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7-reflection-and-office-hours-handoff/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Reflection & Office Hours Handoff
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_9" id="__nav_4_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Optional Hands-On Labs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Optional Hands-On Labs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ixp-invoice-processing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A. IXP Invoice Processing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../uibank-ui-automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    B. UI Automation on UiBank
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C. Orchestrator CoE Assistant
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C. Orchestrator CoE Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#business-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Business context
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Learning objective
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-youll-build" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What you'll build
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerequisites
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estimated-duration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estimated duration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#products-and-tools-used" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Products and tools used
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-build-the-coe-assistant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise: Build the CoE assistant
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exercise: Build the CoE assistant">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objective
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#starting-point" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Starting point
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expected-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Expected output
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extension-challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Extension challenge
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cleanup-and-next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cleanup and next steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pro-coded-sentiment-dashboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D. Pro-Coded Sentiment Dashboard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Days 3-10 — Office Hours
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Days 3-10 — Office Hours
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../days-3-10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../days-3-10/day-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Day 3 — Prompting Coding Agents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../days-3-10/day-4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Day 4 — Skills and CLI Hygiene
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../days-3-10/day-5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Day 5 — Low-Code Agent Authoring
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../days-3-10/day-6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Day 6 — MCP Server Patterns
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../days-3-10/day-7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Day 7 — External and Coded Agents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../days-3-10/day-8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Day 8 — Conversational Agents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../days-3-10/day-9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Day 9 — IXP / DU Document Intake
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../days-3-10/day-10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Day 10 — Evals, Governance, Deployment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resources
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="optional-lab-c-orchestrator-assistant-for-the-automation-coe">Optional Lab C: Orchestrator Assistant for the Automation CoE<a class="headerlink" href="#optional-lab-c-orchestrator-assistant-for-the-automation-coe" title="Permanent link">&para;</a></h1>
+<h2 id="business-context">Business context<a class="headerlink" href="#business-context" title="Permanent link">&para;</a></h2>
+<p>The team that runs your automations asks the same questions all day: what
+was the last job that ran in this folder, what failed this week, how is the
+queue doing. Answering them means opening Orchestrator and clicking through
+filters. In this lab you give a <strong>conversational agent</strong> read-only access to
+the Orchestrator API through a custom Integration Service connector, so the
+team can simply ask.</p>
+<p>This is a deeper follow-up to the required
+<a href="../../5-hands-on-lab-conversational-agent/">conversational agent lab</a>. Do
+that one first.</p>
+<h2 id="learning-objective">Learning objective<a class="headerlink" href="#learning-objective" title="Permanent link">&para;</a></h2>
+<p>Connect a conversational agent to a real API through a custom connector you
+build, and confirm it answers in-scope questions correctly and refuses
+anything it shouldn't do.</p>
+<h2 id="what-youll-build">What you'll build<a class="headerlink" href="#what-youll-build" title="Permanent link">&para;</a></h2>
+<p>A published custom connector over a read-only slice of the Orchestrator API,
+and a conversational agent that uses it to answer questions about jobs,
+processes, folders, and queues.</p>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<ul>
+<li>The <a href="../#before-you-start-any-of-them">common checklist</a> is done</li>
+<li>The required conversational agent lab is done</li>
+<li>Rights to create an <strong>External Application</strong> (Admin → External
+  Applications). Several attendees in the sessions couldn't see that menu
+  and had to borrow a colleague's. Check yours first</li>
+<li>Rights to read the Orchestrator API documentation (Swagger) for your
+  tenant</li>
+</ul>
+<h2 id="estimated-duration">Estimated duration<a class="headerlink" href="#estimated-duration" title="Permanent link">&para;</a></h2>
+<p>75-90 minutes. Connector and sign-in setup is where most of the time goes.</p>
+<h2 id="products-and-tools-used">Products and tools used<a class="headerlink" href="#products-and-tools-used" title="Permanent link">&para;</a></h2>
+<p>Integration Service (custom connector builder) · Orchestrator (External
+Applications, Agents, folders) · Studio Web (Agent Builder, conversational)
+· your coding agent</p>
+<h2 id="exercise-build-the-coe-assistant">Exercise: Build the CoE assistant<a class="headerlink" href="#exercise-build-the-coe-assistant" title="Permanent link">&para;</a></h2>
+<h3 id="objective">Objective<a class="headerlink" href="#objective" title="Permanent link">&para;</a></h3>
+<p>Publish a read-only Orchestrator connector, attach it to a conversational
+agent, and verify the agent answers CoE questions.</p>
+<h3 id="starting-point">Starting point<a class="headerlink" href="#starting-point" title="Permanent link">&para;</a></h3>
+<p>A conversational agent from the required lab (or a new one), and your
+authenticated coding agent.</p>
+<h3 id="build-steps">Build steps<a class="headerlink" href="#build-steps" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Build the custom connector</strong> from Orchestrator's Swagger (OpenAPI)
+   JSON, following the steps in
+   <a href="../../3-tools-and-integrations/#hands-on-build-a-custom-integration-service-connector">Tools &amp; Integrations</a>.
+   Don't skip the safety choices there:</li>
+<li>Expose <strong>read (GET) endpoints only</strong>. This agent should look, not
+     touch</li>
+<li>
+<p>Put secrets in an Orchestrator <strong>Asset</strong>, not in the connector</p>
+</li>
+<li>
+<p><strong>Create the External Application</strong> the connector authenticates with, and
+   copy its client ID and secret into the connection. Don't forget the
+   <strong>token URL</strong> field. Attendees missed it.</p>
+</li>
+<li>
+<p><strong>Publish the connector.</strong> An unpublished connector never shows up as a
+   tool.</p>
+</li>
+<li>
+<p><strong>Test the connection</strong> in Integration Service and expect HTTP 200.</p>
+</li>
+<li>
+<p><strong>Ask your coding agent to build the agent.</strong> Turn on Plan Mode and be
+   explicit about the type and the limits:</p>
+</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Create a UiPath conversational agent to help our automation CoE team
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>interact with Orchestrator. Scope: processes, folders, queues, and
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>jobs. It must only read, never write. Use the Orchestrator connector I
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>published as its tool. Deploy to this organization: https://staging.uipath.com/uspsenablement/portal_/home
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>and tenant: USTechnicalServices.
+</code></pre></div>
+<ol>
+<li>
+<p><strong>Add the connector as a tool</strong> if the agent didn't. In Agent Builder
+   open <strong>Tools</strong>, click <strong>+</strong>, and search under <strong>Activities</strong> (not
+   Connections) for your connector's operations, such as getting job
+   results.</p>
+</li>
+<li>
+<p><strong>Deploy to Studio Web, then to Orchestrator</strong> into a dedicated folder.
+   Deploying without choosing a folder puts it in your personal workspace
+   and can leave a "debug_" prefix on the name.</p>
+</li>
+<li>
+<p><strong>Ask it real CoE questions,</strong> replacing the folder name with one you
+   have:</p>
+</li>
+<li>"What was the last job that ran in the <code>&lt;folder name&gt;</code> folder?"</li>
+<li>"List any errors from the last 20 days."</li>
+<li>
+<p>"How many items are waiting in the <code>&lt;queue name&gt;</code> queue?"</p>
+</li>
+<li>
+<p><strong>Ask it something it must refuse,</strong> such as "Stop that job" or "Delete
+   that queue item". It should explain that it can only read.</p>
+</li>
+</ol>
+<h3 id="checkpoint">Checkpoint<a class="headerlink" href="#checkpoint" title="Permanent link">&para;</a></h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> The connector is published and the connection test returns 200</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Your operations appear as tools in Agent Builder</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> The agent correctly answers at least two CoE questions</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> The agent refuses at least one write or action request</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> The agent is deployed to a dedicated folder, not a personal workspace</li>
+</ul>
+<h3 id="expected-output">Expected output<a class="headerlink" href="#expected-output" title="Permanent link">&para;</a></h3>
+<p>A deployed conversational agent that answers questions about real jobs and
+queues from your tenant, and politely declines to change anything.</p>
+<div class="admonition warning">
+<p class="admonition-title">Needs validation</p>
+<ul>
+<li><strong>Which External Application type to use.</strong> The connector flow
+  needed a client ID and secret. A different lab (<a href="../pro-coded-sentiment-dashboard/">Lab D</a>)
+  failed for most attendees until the app was created as
+  non-confidential. Confirm the right type and scopes with your coach
+  before you create one.</li>
+<li><strong>A governance policy warning.</strong> One attendee saw a message about an
+  "Automation Ops Integration Service" policy that was never resolved
+  during the session. If you see it, escalate to your platform admin.</li>
+<li><strong>Guardrails.</strong> Don't configure guardrails on the shared training
+  tenant (see the <a href="../#how-these-labs-work">index</a>). Whether
+  configurable guardrails apply to conversational agents was also left
+  unresolved.</li>
+</ul>
+</div>
+<h3 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Likely cause</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Connector doesn't show up as a tool</td>
+<td>It isn't published</td>
+<td>Publish it, then search again</td>
+</tr>
+<tr>
+<td>You can't find it when adding a tool</td>
+<td>Searching under Connections</td>
+<td>Search under <strong>Activities</strong></td>
+</tr>
+<tr>
+<td>Connection test fails to authenticate</td>
+<td>Missing token URL, or wrong client ID or secret</td>
+<td>Re-enter the connection, including the token URL</td>
+</tr>
+<tr>
+<td>The official Orchestrator connector's activities don't appear</td>
+<td>Known to be unreliable for several attendees</td>
+<td>Use your own custom connector</td>
+</tr>
+<tr>
+<td>Tool call fails with a permission error</td>
+<td>Shared-folder or scope permission</td>
+<td>Test against a folder you own to separate a permission problem from a broken tool</td>
+</tr>
+<tr>
+<td>The agent reuses the previous folder in a follow-up question</td>
+<td>Context bleeding between turns</td>
+<td>Name the folder in every question</td>
+</tr>
+<tr>
+<td>You get a Python or coded agent</td>
+<td>Prompt didn't say "UiPath conversational agent"</td>
+<td>Re-prompt with those exact words</td>
+</tr>
+<tr>
+<td>An on-premises API fails with a 400</td>
+<td>A cloud connector can't reach an internal-only system</td>
+<td>Reach it through something running on-premises</td>
+</tr>
+<tr>
+<td>The agent answers beyond its scope</td>
+<td>Scope in the prompt was loose</td>
+<td>Tighten the system prompt and re-test</td>
+</tr>
+</tbody>
+</table>
+<h3 id="extension-challenge">Extension challenge<a class="headerlink" href="#extension-challenge" title="Permanent link">&para;</a></h3>
+<p>Add a second read-only operation, such as queue item details, and ask a
+question that needs both tools. Then decide whether this should stay one
+agent with more tools or become two specialized agents. Every extra agent
+costs another model call, so there's no universal answer.</p>
+<h3 id="cleanup-and-next-steps">Cleanup and next steps<a class="headerlink" href="#cleanup-and-next-steps" title="Permanent link">&para;</a></h3>
+<p>Keep it. Everything you configured here is the same pattern you'll use to
+connect an agent to a system of your own. To put a chat window in front of
+the team, try <a href="../pro-coded-sentiment-dashboard/">Lab D</a> next, or see
+<a href="../../../resources/">Deploying conversational agents</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../uibank-ui-automation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: B. UI Automation on UiBank">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                B. UI Automation on UiBank
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../pro-coded-sentiment-dashboard/" class="md-footer__link md-footer__link--next" aria-label="Next: D. Pro-Coded Sentiment Dashboard">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                D. Pro-Coded Sentiment Dashboard
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "toc.integrate", "search.highlight", "search.suggest", "content.code.copy", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+        <script src="../../../javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>
