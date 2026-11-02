@@ -6,7 +6,7 @@
 ## Why this matters
 
 This is demo day — the **demo ready** executive-tracking milestone (see
-[Program Overview](../program-overview.md#executive-tracking-checkpoints))
+[Days 3–10 overview](../days-3-10/index.md#executive-tracking))
 and the culmination of the whole two weeks. Day 10 is about proving your
 solution is ready to show, not just that it exists.
 

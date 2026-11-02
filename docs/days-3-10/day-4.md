@@ -6,7 +6,7 @@
 ## Why this matters
 
 This is also the **MVP running** executive-tracking milestone (see
-[Program Overview](../program-overview.md#executive-tracking-checkpoints)).
+[Days 3–10 overview](../days-3-10/index.md#executive-tracking)).
 "Hygiene" here means: is your setup repeatable enough that you (or a
 teammate) could tear it down and rebuild it without re-solving the same
 auth or PATH problem you hit on Day 1?

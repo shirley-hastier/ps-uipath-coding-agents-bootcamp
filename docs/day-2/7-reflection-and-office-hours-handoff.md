@@ -11,7 +11,7 @@ written down.
 ## Checkpoint: Day 2 close
 
 - [ ] Use case selected (the Day 2 executive-tracking milestone — see
-      [Program Overview](../program-overview.md#executive-tracking-checkpoints))
+      [Days 3–10 overview](../days-3-10/index.md#executive-tracking))
 - [ ] Day 1 and Day 2 builds are both deployed, even if imperfect
 - [ ] Open issues from today are written down, not just remembered
 
@@ -21,6 +21,11 @@ Days 3–10 are self-paced office hours with daily checkpoints. See
 [Days 3–10: Office Hours & Checkpoints](../days-3-10/index.md) for
 the daily focus and what "done" looks like each day, building toward your
 Day 10 demo.
+
+Looking for a warm-up before your first check-in? The
+[optional hands-on labs](optional/index.md) are a good way to practice
+IXP, UI automation, an Orchestrator-connected agent, or a pro-coded app
+against a build you already have.
 
 Recommended follow-up resources for self-paced deepening:
 

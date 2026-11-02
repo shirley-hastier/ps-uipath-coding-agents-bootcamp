@@ -6,7 +6,7 @@
 ## Why this matters
 
 This is also the **evaluation completed** executive-tracking milestone
-(see [Program Overview](../program-overview.md#executive-tracking-checkpoints)).
+(see [Days 3–10 overview](../days-3-10/index.md#executive-tracking)).
 Day 2's [conversational agent lab](../day-2/5-hands-on-lab-conversational-agent.md)
 proved your agent answers correctly within scope. Day 8 is about proving
 it consistently — including the cases where it should say "I can't do

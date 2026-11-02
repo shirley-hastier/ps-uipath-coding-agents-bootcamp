@@ -74,6 +74,12 @@ nav:
     - 5. Hands-On Lab — Build a Conversational Agent: day-2/5-hands-on-lab-conversational-agent.md
     - 6. Coded Agents & Production Readiness: day-2/6-coded-agents-and-production-readiness.md
     - 7. Reflection & Office Hours Handoff: day-2/7-reflection-and-office-hours-handoff.md
+    - Optional Hands-On Labs:
+      - Overview: day-2/optional/index.md
+      - A. IXP Invoice Processing: day-2/optional/ixp-invoice-processing.md
+      - B. UI Automation on UiBank: day-2/optional/uibank-ui-automation.md
+      - C. Orchestrator CoE Assistant: day-2/optional/orchestrator-coe-assistant.md
+      - D. Pro-Coded Sentiment Dashboard: day-2/optional/pro-coded-sentiment-dashboard.md
   - Days 3-10 — Office Hours:
     - Overview: days-3-10/index.md
     - Day 3 — Prompting Coding Agents: days-3-10/day-3.md

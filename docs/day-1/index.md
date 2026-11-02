@@ -63,7 +63,7 @@ works, before Day 2 layers on tools, MCP, and more complex patterns.
 - [ ] Every attendee has Node.js and an IDE (VS Code, or UiPath Studio
       Desktop with the terminal panel) installed
 - [ ] Training vs. customer environment decision is made and communicated
-      (see [Program Overview](../program-overview.md#training-environment-vs-customer-environment))
+      (your coach will confirm which one this cohort uses)
 - [ ] The org/tenant/authority URL for this cohort is confirmed and
       distributed
 - [ ] Each attendee (or small team) has a named use case in mind

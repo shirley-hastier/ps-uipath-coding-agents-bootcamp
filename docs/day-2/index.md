@@ -38,6 +38,9 @@ try to attach a not-yet-fully-working capability (an MCP-based tool) and
 how to recover from that gracefully — this is one of the most useful
 moments in the whole bootcamp precisely because it doesn't go perfectly.
 
+If you finish early, there are four [optional hands-on labs](optional/index.md)
+to pick from. They reuse what you built on Day 1 and Day 2.
+
 ## Agenda
 
 | # | Segment | Type |
@@ -50,6 +53,7 @@ moments in the whole bootcamp precisely because it doesn't go perfectly.
 | 05 | [Hands-On Lab: Build a Conversational Agent](5-hands-on-lab-conversational-agent.md) | Exercise |
 | 06 | [Coded Agents & Production Readiness](6-coded-agents-and-production-readiness.md) | Instruction + Demo |
 | 07 | [Reflection & Office Hours Handoff](7-reflection-and-office-hours-handoff.md) | Reflection |
+| Optional | [Optional Hands-On Labs](optional/index.md) (IXP invoices, UiBank UI automation, Orchestrator CoE assistant, sentiment dashboard) | Exercises |
 
 !!! warning "Needs validation — MCP servers are not fully reliable yet"
     Across two separate live deliveries, an agent's attempt to create and
